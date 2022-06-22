@@ -5,13 +5,29 @@
 // @description Displays a camelcamelcamel past price performance chart directly on the amazon.co.uk
 // @author      https://github.com/michalani
 // @license     MIT
-// @match       https://www.amazon.*/*/dp/*
-// @match       https://www.amazon.*.*/dp/*
+// @match       https://www.amazon.co.uk/*/dp/*
+// @match       https://www.amazon.co.uk/dp/*
+// @match       https://www.amazon.de/*/dp/*
+// @match       https://www.amazon.de/dp/*
+// @match       https://www.amazon.it/*/dp/*
+// @match       https://www.amazon.it/dp/*
+// @match       https://www.amazon.pl/*/dp/*
+// @match       https://www.amazon.pl/dp/*
+// @match       https://www.amazon.com/*/dp/*
+// @match       https://www.amazon.com/dp/*
+// @match       https://www.amazon.com.au/*/dp/*
+// @match       https://www.amazon.com.au/dp/*
+// @match       https://www.amazon.com.br/*/dp/*
+// @match       https://www.amazon.com.br/dp/*
+// @match       https://www.amazon.ca/*/dp/*
+// @match       https://www.amazon.ca/dp/*
 // @updateURL   https://raw.githubusercontent.com/michalani/amazon-c4-display/master/main.js
 // @downloadURL https://raw.githubusercontent.com/michalani/amazon-c4-display/master/main.js
 // @grant       none
 // @noframes
 // ==/UserScript==
+
+//todo: add more amazons matches.. in the future.
 
 function main(){
     //parse the produc id of on the amazon (https://www.amazon.co.uk/*/dp/B07GDR2PH9) where B07GDR2PH9 would be product id
@@ -39,4 +55,4 @@ function main(){
     })
 }
 
-main(); 
+main();
